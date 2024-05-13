@@ -1,0 +1,14 @@
+.navbar-container {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--bg-dark-blue);
+
+  max-height: 4rem;
+}
+
+.navbar-container-light {
+  background-color: transparent;
+}

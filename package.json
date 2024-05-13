@@ -1,0 +1,45 @@
+{
+  "name": "saga-farmann",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": " next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/react-transition-group": "^4.4.5",
+    "@types/swiper": "^6.0.0",
+    "@vercel/analytics": "^0.1.11",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "he": "^1.2.0",
+    "mapbox-gl": "^2.13.0",
+    "next": "13.1.6",
+    "node-cron": "^3.0.2",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-map-gl": "^7.0.21",
+    "react-markdown": "^8.0.5",
+    "react-modal": "^3.16.1",
+    "react-parallax": "^3.5.1",
+    "react-transition-group": "^4.4.5",
+    "react-use-downloader": "^1.2.4",
+    "sharp": "^0.31.3",
+    "swiper": "^9.3.2",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/he": "^1.2.0",
+    "@types/mapbox-gl": "^2.7.10",
+    "@types/react-modal": "^3.13.1",
+    "classnames": "^2.3.2"
+  }
+}

@@ -1,0 +1,115 @@
+.card {
+  width: 80%;
+  max-width: 140rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.header-container,
+.paragraph-container {
+  margin-bottom: 2em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  display: grid;
+  align-items: center;
+  gap: clamp(1rem, 5rem, 10rem);
+  grid-template-areas: "prev swiper next";
+}
+
+.swiper-nav-prev,
+.swiper-nav-next {
+  cursor: pointer;
+  display: flex;
+}
+
+.swiper-nav-prev {
+  grid-area: prev;
+}
+
+.swiper-nav-next {
+  grid-area: next;
+}
+
+.images {
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 50rem;
+}
+
+.image:hover {
+  opacity: 1;
+}
+
+.download {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.download {
+  position: relative;
+}
+
+.download:hover::before {
+  content: "Download article";
+  display: block;
+  position: absolute;
+  left: -50%;
+  transform: translateY(-120%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.download:hover {
+  cursor: pointer;
+}
+
+.arrow-icon {
+  color: var(--bg-pink-brown);
+}
+
+@media screen and (max-width: 650px) {
+  .swiper-nav-prev,
+  .swiper-nav-next {
+    display: none;
+  }
+}
