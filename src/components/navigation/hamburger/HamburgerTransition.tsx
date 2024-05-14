@@ -5,6 +5,7 @@ import Link from "next/link";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
 import { useCurrentCrewId } from "@/hooks/useCurrentCrewId";
 import { links } from "./links";
+import SocialMediaLinks from "@/components/footer/SosialMediaLinks";
 
 const HamburgerTransition = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -113,19 +114,22 @@ const HamburgerTransition = () => {
           }}
           unmountOnExit
         >
-          <nav ref={nodeRefMenu} className={styles.menu}>
-            {pageLinks.map(({ href, label }) => (
-              <div key={href}>
-                <Link
-                  className={styles["page-link"]}
-                  href={href}
-                  onClick={handleLinkClick}
-                >
-                  <>{label}</>
-                </Link>
-              </div>
-            ))}
-          </nav>
+          <div className={styles["menu-wrapper"]} ref={nodeRefMenu}>
+            <nav className={styles.menu}>
+              {pageLinks.map(({ href, label }) => (
+                <div key={href}>
+                  <Link
+                    className={styles["page-link"]}
+                    href={href}
+                    onClick={handleLinkClick}
+                  >
+                    <>{label}</>
+                  </Link>
+                </div>
+              ))}
+            </nav>
+            <SocialMediaLinks heading={false} />
+          </div>
         </CSSTransition>
       </div>
     </>

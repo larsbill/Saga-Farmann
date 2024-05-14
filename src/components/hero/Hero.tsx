@@ -15,7 +15,7 @@ const Hero = () => {
     <div className={styles["hero-wrapper"]}>
       <iframe
         className={styles["hero-background"]}
-        src="//play.vidyard.com/79REgXia3dWEHr8k291aWp/type/background?quality=720p"
+        src="//play.vidyard.com/BfqbdgfNC1xH9xY1U3yG3e/type/background?quality=720p"
       ></iframe>
       <div className={styles["hero-burger-wrapper"]}>
         <HamburgerTransition />

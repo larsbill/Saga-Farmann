@@ -12,14 +12,14 @@ const FooterLinks = () => {
     <>
       <div className={styles["container-links"]}>
         <ul className={styles["wrapper-links"]}>
-          {pageLinks.slice(0, 5).map(({ href, label }) => (
+          {pageLinks.slice(0, 4).map(({ href, label }) => (
             <Link key={href} className={styles["footer-links"]} href={href}>
               <>{label}</>
             </Link>
           ))}
         </ul>
         <ul className={styles["wrapper-links"]}>
-          {pageLinks.slice(5, 10).map(({ href, label }) => (
+          {pageLinks.slice(4, pageLinks.length).map(({ href, label }) => (
             <Link key={href} className={styles["footer-links"]} href={href}>
               <>{label}</>
             </Link>

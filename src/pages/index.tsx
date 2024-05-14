@@ -29,12 +29,7 @@ export interface HomeProps {
   latestNews: LatestNewsHomeProps;
 }
 
-const Home = ({
-  stagesMapProps,
-  gridSection,
-  sponsorUsSection,
-  latestNews,
-}: HomeProps) => {
+const Home = ({ stagesMapProps, gridSection, sponsorUsSection }: HomeProps) => {
   return (
     <>
       <Head>
@@ -50,26 +45,14 @@ const Home = ({
       <div className={styles["grid-wrapper"]}>
         <GridImagesAndText gridContent={gridSection} />
       </div>
-      <LatestNews
-        postHeading={latestNews.latestNewsText.latest_news_heading}
-        postText={latestNews.latestNewsText.latest_news_short_description}
-        posts={latestNews.posts}
-      />
       <div className={styles["map-container"]}>
         <div className={styles["map-wave-wrapper"]}>
-          <WaveRedBrown />
+          <WaveRedBrown red />
         </div>
         <StagesMap
           destinations={stagesMapProps.destinations}
           stages={stagesMapProps.stages}
         />
-      </div>
-
-      <div className={styles["livestream-wrapper"]}>
-        <div className={styles["youtubeLink-wrapper"]}>
-          <YoutubeLink dark />
-        </div>
-        <LivestreamVideo />
       </div>
       <SponsorUsSection data={sponsorUsSection} />
     </>
