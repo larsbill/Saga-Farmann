@@ -29,6 +29,7 @@
   width: 100%;
   position: absolute;
   z-index: 1;
+  top: -185px;
 }
 
 @media screen and (max-width: 1200px) {

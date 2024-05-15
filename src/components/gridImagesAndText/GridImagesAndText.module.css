@@ -3,6 +3,8 @@
   grid-template-columns: 40rem 40rem 40rem;
   grid-template-rows: 40px 90px 100px 30px 200px 180px 50px;
   text-align: center;
+  padding-bottom: 8rem;
+  z-index: 2;
 }
 
 .textBox-one,
