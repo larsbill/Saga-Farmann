@@ -15,7 +15,7 @@ const TheVoyage = ({ voyage }: VoyageProps) => {
     <>
       <Header voyage={true} header={"The voyage"} />
       <div className={styles["voyage-content-container"]}>
-        {voyage.map((voyageData, i) => (
+        {/* {voyage.map((voyageData, i) => (
           <Fragment key={i}>
             {!voyageData.acf.next_year && (
               <>
@@ -34,7 +34,7 @@ const TheVoyage = ({ voyage }: VoyageProps) => {
               </>
             )}
           </Fragment>
-        ))}
+        ))} */}
       </div>
     </>
   );
