@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 70rem;
+}
+
+.input {
+  width: 100%;
+  padding: 2rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-family: "Comfortaa";
+  color: black;
+}
+
+.button {
+  background-color: var(--bg-pink-brown);
+  padding: 1.8rem 6rem;
+  width: fit-content;
+  border-radius: 2.8rem;
+  border: none;
+  color: white;
+  font-size: var(--p--step-1);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.message {
+  text-align: center;
+  font-size: var(--p--step-2);
+  font-weight: bold;
+  color: var(--light-text-color);
+}
