@@ -34,7 +34,7 @@ const Hero = () => {
           className={styles["hero-logo"]}
           width={305}
           height={151}
-          src={"/Saga Asia_org-ai.png"}
+          src={"/Saga_Med_org_page-0001-removebg-preview.png"}
           alt="Saga Farmann logo"
         />
       </div>
