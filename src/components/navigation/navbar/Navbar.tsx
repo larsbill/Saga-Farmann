@@ -22,7 +22,7 @@ const Navbar = ({ lightNavbar }: NavbarProps) => {
         <Image
           width={145}
           height={70}
-          src="/Saga Asia_neg-ai.png"
+          src="/Saga_Med_org_page-0001-removebg-preview.png"
           alt="Saga Farmann logo"
         />
       </Link>
