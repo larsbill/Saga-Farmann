@@ -14,6 +14,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "saga2024.sagafarmann.com",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "https://share.vidyard.com",
         port: "",
       },
